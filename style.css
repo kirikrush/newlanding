@@ -223,6 +223,12 @@ section:nth-child(2n) {
     grid-template-rows: 3fr 3fr 3fr 3fr;
     grid-template-columns: 1fr;
   }
+  .header {
+    font-size: 26px;
+  }
+  p {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .why__grid_container {
