@@ -1,8 +1,8 @@
-@font-face{
-    font-family:'Annabelle';
+@font-face {
+    font-family: 'Annabelle';
     font-style: normal;
     font-weight: 400;
-    src: url(./fonts/Annabele.ttf)format('ttf');
+    src: url("./fonts/Annabele.ttf") format('truetype');
 }
 
 * {
@@ -18,13 +18,14 @@ a {
     line-height: 1;
     text-decoration: none;
 }
+
 a:after {
     display: block;
     position: absolute;
     left: 0;
     width: 0;
     height: 2px;
-    background-color: rgba(69,71,70, 0.7);
+    background-color: rgba(69, 71, 70, 0.7);
     content: "";
     transition: width 0.3s ease-out;
 }
@@ -37,6 +38,12 @@ a:focus:after {
 body {
     width: 100%;
     scroll-behavior: smooth;
+}
+
+.header__shadow {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 
 // global
@@ -132,7 +139,7 @@ section:not(:first-child):nth-child(2n+1) {
 
 .top__desc {
     position: relative;
-    top:63px;
+    top: 63px;
     padding: 0 @standartPad;
     padding-bottom: 237px;
     padding-top: 180px;
@@ -522,26 +529,28 @@ section:not(:first-child):nth-child(2n+1) {
     height: 198px;
     background-image: url("img/preview.png");
     position: relative;
-    transition:all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .play__logo {
     position: absolute;
-    opacity:0;
+    opacity: 0;
     right: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     top: 50%;
     bottom: 50%;
-    transition:all ease 0.5s;
+    transition: all ease 0.5s;
 }
 
-.preview__container:hover{
-    opacity:0.5;
+.preview__container:hover {
+    opacity: 0.5;
 }
-.preview__container:hover .play__logo{
+
+.preview__container:hover .play__logo {
     opacity: 1;
 }
+
 .name {
     display: block;
     color: #202020;
@@ -803,8 +812,8 @@ footer .menu__item:first-child {
 .social {
     display: flex;
     flex-wrap: wrap;
-    img{
-        margin:0 5px;
+    img {
+        margin: 0 5px;
     }
 }
 
