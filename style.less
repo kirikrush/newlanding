@@ -36,7 +36,7 @@ header {
 }
 
 .header__responsive__nav {
-    height:23px;
+    height: 23px;
     ul {
         position: relative;
         list-style-type: none;
@@ -48,8 +48,8 @@ header {
     .menu__item:not(:first-child) {
         display: block;
         margin-top: 5px;
-        width:200px;
-        border:1px rgba(155, 155, 155, 0.23);
+        width: 200px;
+        border: 1px rgba(155, 155, 155, 0.23);
         border-radius: 30px;
         background-color: rgba(155, 155, 155, 0.23);
     }
@@ -447,7 +447,7 @@ section:nth-child(2n) {
 }
 
 .feedbacks {
-    padding: 70px @standartPad 0 @standartPad;
+    padding: 70px @standartPad 130px @standartPad;
 }
 
 .feedbacks__header {
@@ -473,6 +473,50 @@ section:nth-child(2n) {
     top: -50px;
     left: 0;
     right: 0;
+}
+
+.feedbacks__flex_container {
+    margin-top:80px;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+.preview__container {
+    width: 370px;
+    height: 198px;
+    background-image: url("img/preview.png");
+    position: relative;
+}
+
+.play__logo {
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    bottom: 50%;
+}
+
+.name {
+    display: block;
+    color: #202020;
+    font-family: Annabelle;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 51.79px;
+    text-align: center;
+    margin-top:40px;
+}
+
+.specialist {
+    display: block;
+    color: #a4623e;
+    font-family: "Open Sans";
+    font-size: 18px;
+    line-height: 28.79px;
+    text-align: center;
 }
 
 @media screen and(max-width:1400px) {
@@ -518,10 +562,9 @@ section:nth-child(2n) {
 }
 
 @media screen and(max-width:700px) {
-    header{
+    header {
         flex-flow: column;
     }
-
     .why__grid_container {
         grid-template-rows: 3fr 3fr 3fr 3fr;
         grid-template-columns: 1fr;
@@ -530,10 +573,10 @@ section:nth-child(2n) {
     .item__work {
         img {
             width: 250px;
+            height: auto;
         }
     }
-
-    .personal__frame{
-        width:75%;
+    .personal__frame {
+        width: 75%;
     }
 }
