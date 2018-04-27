@@ -18,6 +18,7 @@ header {
     padding: 0 @standartPad;
     padding-top: 40px;
     align-items: center;
+    flex-direction: row;
 }
 
 .header__logo {
@@ -517,6 +518,10 @@ section:nth-child(2n) {
 }
 
 @media screen and(max-width:700px) {
+    header{
+        flex-flow: column;
+    }
+
     .why__grid_container {
         grid-template-rows: 3fr 3fr 3fr 3fr;
         grid-template-columns: 1fr;
