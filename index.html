@@ -18,18 +18,21 @@
     <div class="header__logo">
       Logotype
     </div>
-    <nav class="header__nav">
+    <nav class="header__nav" id="nav">
       <ul>
-        <li>
+        <li class="menu__item">
+          <a href="javascript:void(0);" class="response__menu__icon" onclick="showMenu()">☰ </a>
+        </li>
+        <li class="menu__item">
           <a href="#ourWorks">Наши работы</a>
         </li>
-        <li>
+        <li class="menu__item">
           <a href="#workingProcess">Процесс работы</a>
         </li>
-        <li>
-          <a href="#feedback">Отзывы</a>
+        <li class="menu__item">
+          <a href="#feedbacks">Отзывы</a>
         </li>
-        <li>
+        <li class="menu__item">
           <a href="#contacts">Контакты</a>
         </li>
       </ul>
@@ -185,8 +188,35 @@
       </div>
     </section>
     <!-- working process -->
-
-
+    <section class="personal">
+      <h1 class="personal__header header">Закажите персональную беседку
+        <span class="personal__header__shadow header">Закажите персональную беседку</span>
+      </h1>
+      <div class="personal__flex__container">
+        <div class="consultation">
+          <p class="personal__paragraph paragraph">В мире бурно развивающейся строительной отрасли особое место
+            <br> занимает такое сооружение, как кованые беседки для дачи.
+            <br> Конструкция представляет собой огражденную площадь, созданную
+            <br> специализированно для проведения времени в кругу семьи, друзей и
+            <br> близких. Прекрасный внешний вид сооружения можно добавить
+            <br> композицией заборов, решеток и деталей садовых украшений,
+            <br> выполненных из того материала.</p>
+          <h3 class="personal__header__min">Заказать персональную консультацию</h3>
+          <form action="" class="personal__form">
+            <input type="text" placeholder="Ваше имя">
+            <input type="tel" placeholder="Ваш телефон" pattern="+[1-9]{1}[0-9]{10}">
+            <button>Получить консультацию</button>
+          </form>
+        </div>
+        <img src="img/alcove.png" alt="alcove" class="personal__frame">
+      </div>
+    </section>
+    <!-- Personal alcoves -->
+    <section class="feedbacks" id="feedbacks">
+      <h1 class="feedbacks__header header">Отзывы
+        <span class="feedbacks__header__shadow header__shadow">Отзывы</span>
+      </h1>
+    </section>
   </main>
   <footer>
 
