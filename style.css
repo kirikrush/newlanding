@@ -745,6 +745,9 @@ footer .menu__item:first-child {
   .header {
     font-size: 26px;
   }
+  .header__shadow {
+    font-size: 26px;
+  }
   p {
     font-size: 14px;
     text-align: justify;
