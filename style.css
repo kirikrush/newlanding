@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Annabelle';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/Annabele.ttf) format('truetype');
+}
 * {
   padding: 0;
   margin: 0;
