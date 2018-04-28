@@ -46,6 +46,51 @@
     <!-- callback -->
   </header>
   <!-- header -->
+  <div class="container_test"> </div>
+    <div class="test_div">
+      <button class="test__close">X</button>
+      <form action="" class="test" id="test_form">
+          <div class="works__grid__container">
+              <div class="item__work">
+                <img src="img/work_1.png" alt="1">
+                <h5>Кованная беседка</h5>
+                <p>с тентовым покрытием в са</p>
+                <button>Подробнее</button>
+              </div>
+              <div class="item__work">
+                <img src="img/work_2.png" alt="2">
+                <h5>Кованная беседка</h5>
+                <p>с тентовым покрытием в сад</p>
+                <button>Подробнее</button>
+              </div>
+              <div class="item__work">
+                <img src="img/work_3.png" alt="3">
+                <h5>Кованная беседка</h5>
+                <p>с тентовым покрытием в сад</p>
+                <button>Подробнее</button>
+              </div>
+              <div class="item__work">
+                <img src="img/work_1.png" alt="4">
+                <h5>Кованная беседка</h5>
+                <p>с тентовым покрытием в сад</p>
+                <button>Подробнее</button>
+              </div>
+              <div class="item__work">
+                <img src="img/work_2.png" alt="5">
+                <h5>Кованная беседка</h5>
+                <p>с тентовым покрытием в сад</p>
+                <button>Подробнее</button>
+              </div>
+              <div class="item__work">
+                <img src="img/work_3.png" alt="6">
+                <h5>Кованная беседка</h5>
+                <p>с тентовым покрытием в сад</p>
+                <button>Подробнее</button>
+              </div>
+            </div>
+      </form>
+    </div>
+ 
   <main>
 
     <section class="top__desc">
@@ -56,6 +101,7 @@
       <p class="top__desc__paragraph">
         Пройдите тест и узнайте, какая беседка идеально полойдет для Вас и получите персональную скидку до 10 000 рублей</p>
       <button class="top__desc__test">Пройти тест!</button>
+
 
     </section>
     <section class="why">
@@ -203,9 +249,9 @@
             <br> композицией заборов, решеток и деталей садовых украшений,
             <br> выполненных из того материала.</p>
           <h3 class="personal__header__min">Заказать персональную консультацию</h3>
-          <form action="" class="personal__form">
-            <input type="text" placeholder="Ваше имя">
-            <input type="tel" placeholder="Ваш телефон" pattern="+[1-9]{1}[0-9]{10}">
+          <form action="" class="personal__form" metho="POST">
+            <input type="text" placeholder="Ваше имя" required="required">
+            <input type="tel" placeholder="Ваш телефон" pattern="+[1-9]{1}[0-9]{10}" required="required">
             <button>Получить консультацию</button>
           </form>
         </div>

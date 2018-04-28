@@ -30,10 +30,34 @@ $(document).ready(() => {
     }
   })
 
+  $(".top__desc__test").on('click', () =>{
+    $(".container_test").css({
+      transform:"scale(1)"
+    })
+    $(".test_div").css({
+      transform:"scale(1)"
+    })
+    $("body").css({
+      overflow:"hidden"
+    })
+
+
+  })
+
+  $('.test__close').on('click', () =>{
+    $(".container_test").css({
+      transform:"scale(0)"
+    })
+    $(".test_div").css({
+      transform:"scale(0)"
+    })
+
+    $("body").css({
+      overflow:"scroll"
+    })
+
 })
 
-
-
-
+})
 
 
