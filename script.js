@@ -1,39 +1,39 @@
-
-function showMenu() {
-    let menu = document.getElementById('nav');
-    switch (menu.className) {
-        case "header__nav":
-            menu.className = "header__responsive__nav"
-            break;
-        case "header__responsive__nav":
-            menu.className = "header__nav";
-            break;
+$(document).ready(() => {
+  $('.response__menu__icon').on('click', () => {
+    switch ($('#nav').attr('class')) {
+      case 'header__nav':
+        $('#nav').attr('class', "header__responsive__nav");
+        break;
+      case "header__responsive__nav":
+        $('#nav').attr('class', "header__nav");
+        break;
     }
-}
 
-function showBotMenu() {
-    let menu = document.getElementById('foot_nav');
-    switch (menu.className) {
-        case "footer__nav":
-            menu.className = "footer__responsive__nav";
-            break;
-        case "footer__responsive__nav":
-            menu.className = "footer__nav";
-            break;
+  })
+
+
+
+  $('#response__menu__icon').on('click', () => {
+    switch ($('#foot_nav').attr('class')) {
+      case 'footer__nav':
+        $('#foot_nav').attr('class', "footer__responsive__nav");
+        break;
+      case "footer__responsive__nav":
+        $('#foot_nav').attr('class', "footer__nav");
+        break;
     }
-}
+  })
 
-
-function hideMenu() {
-    let menu = document.getElementById('nav');
-    if (menu.className = "header__responsive__nav") {
-        menu.className = "header__nav";
+  $("section").on('click', () => {
+    if ($('#foot_nav').attr('class') == "footer__responsive__nav") {
+      $('#foot_nav').attr('class', "footer__nav");
     }
-}
+  })
 
-function hideBotMenu() {
-    let menu = document.getElementById('foot_nav');
-    if (menu.className = "footer__responsive__nav") {
-        menu.className = "footer__nav";
-    }
-}
+})
+
+
+
+
+
+

@@ -8,6 +8,8 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
   <script src="script.js"></script>
   <title>Кованные беседки</title>
 </head>
@@ -201,9 +203,9 @@
             <br> композицией заборов, решеток и деталей садовых украшений,
             <br> выполненных из того материала.</p>
           <h3 class="personal__header__min">Заказать персональную консультацию</h3>
-          <form action="#" method="POST" class="personal__form">
-            <input type="text" name="name" placeholder="Ваше имя" required="required">
-            <input type="tel" name="tepephone" placeholder="Ваш телефон" pattern="+[1-9]{1}[0-9]{10}" required="required">
+          <form action="" class="personal__form">
+            <input type="text" placeholder="Ваше имя">
+            <input type="tel" placeholder="Ваш телефон" pattern="+[1-9]{1}[0-9]{10}">
             <button>Получить консультацию</button>
           </form>
         </div>
@@ -301,7 +303,8 @@
         </div>
         <div class="work_time">
           <h3 class="time">Рабочее время:
-          </h3><span>Понедельник-Пятница: с 9.00 до 18.00</span>
+          </h3>
+          <span>Понедельник-Пятница: с 9.00 до 18.00</span>
           <span>Суббота с 10.00 до 16.00</span>
           <span>Воскресенье-выходной</span>
           <h3 class="tel">Телефон:</h3>
@@ -315,35 +318,43 @@
     <!-- Time and place -->
   </main>
   <footer>
-      <div class="footer__logo">
-          Logotype
-        </div>
-        <nav class="footer__nav" id="foot_nav">
-          <ul>
-            <li class="menu__item">
-              <a href="javascript:void(0);" class="response__menu__icon" onclick="showBotMenu()">☰ </a>
-            </li>
-            <li class="menu__item">
-              <a href="#ourWorks" onclick="hideBotMenu()">Наши работы</a>
-            </li>
-            <li class="menu__item">
-              <a href="#workingProcess" onclick="hideBotMenu()">Процесс работы</a>
-            </li>
-            <li class="menu__item">
-              <a href="#feedbacks" onclick="hideBotMenu()">Отзывы</a>
-            </li>
-            <li class="menu__item">
-              <a href="#contacts" onclick="hideBotMenu()">Контакты</a>
-            </li>
-          </ul>
-          <!-- navigation list -->
-        </nav>
-        <div class="social">
-          <a href=""><img src="img/social.png" alt="social" class="social"></a>
-          <a href=""><img src="img/social_2.png" alt="social" class="social"></a>
-          <a href=""><img src="img/social_3.png" alt="social" class="social"></a>
-          <a href=""><img src="img/social_4.png" alt="social" class="social"></a>
-        </div>
+    <div class="footer__logo">
+      Logotype
+    </div>
+    <nav class="footer__nav" id="foot_nav">
+      <ul>
+        <li class="menu__item">
+          <a href="javascript:void(0);" class="response__menu__icon" id="response__menu__icon" onclick="showBotMenu()">☰ </a>
+        </li>
+        <li class="menu__item">
+          <a href="#ourWorks" onclick="hideBotMenu()">Наши работы</a>
+        </li>
+        <li class="menu__item">
+          <a href="#workingProcess" onclick="hideBotMenu()">Процесс работы</a>
+        </li>
+        <li class="menu__item">
+          <a href="#feedbacks" onclick="hideBotMenu()">Отзывы</a>
+        </li>
+        <li class="menu__item">
+          <a href="#contacts" onclick="hideBotMenu()">Контакты</a>
+        </li>
+      </ul>
+      <!-- navigation list -->
+    </nav>
+    <div class="social">
+      <a href="">
+        <img src="img/social.png" alt="social" class="social">
+      </a>
+      <a href="">
+        <img src="img/social_2.png" alt="social" class="social">
+      </a>
+      <a href="">
+        <img src="img/social_3.png" alt="social" class="social">
+      </a>
+      <a href="">
+        <img src="img/social_4.png" alt="social" class="social">
+      </a>
+    </div>
   </footer>
 </body>
 

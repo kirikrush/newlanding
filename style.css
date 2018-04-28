@@ -33,6 +33,7 @@ a:focus:after {
 body {
   width: 100%;
   scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 .header__shadow {
   user-select: none;
@@ -683,7 +684,7 @@ footer {
 .footer__nav a {
   color: #fff;
 }
-footer .menu__item:first-child {
+#response__menu__icon {
   display: none;
 }
 .footer__responsive__nav {
@@ -692,18 +693,22 @@ footer .menu__item:first-child {
 .footer__responsive__nav ul {
   position: relative;
   list-style-type: none;
+  bottom: 150px;
 }
 .footer__responsive__nav .menu__item:first-child {
+  position: relative;
   text-align: center;
-  margin-bottom: 50px;
+  color: #fff;
+  bottom: -150px;
 }
 .footer__responsive__nav .menu__item:not(:first-child) {
   display: block;
-  margin-top: 5px;
+  margin-bottom: 10px;
   width: 200px;
   border: 1px rgba(155, 155, 155, 0.23);
   border-radius: 30px;
   background-color: rgba(155, 155, 155, 0.23);
+  color: #fff;
 }
 .footer__nav ul {
   display: flex;
@@ -776,10 +781,10 @@ footer .menu__item:first-child {
     width: 10%;
     justify-self: end;
   }
-  .footer__nav .menu__item:not(:first-child) {
+  .footer__nav ul .menu__item:not(:first-child) {
     display: none;
   }
-  .footer__nav .menu__item:first-child {
+  #response__menu__icon {
     display: block;
   }
 }
