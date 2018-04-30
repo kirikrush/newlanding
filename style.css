@@ -717,7 +717,6 @@ footer {
   flex-direction: row;
   background-image: url("img/footer.png");
   background-size: cover;
-  background-position: -10px 0;
 }
 .footer__logo {
   font-family: 'Noto Sans';
@@ -733,6 +732,7 @@ footer {
 }
 #response__menu__icon {
   display: none;
+  color: #fff;
 }
 .footer__responsive__nav {
   height: 23px;
@@ -740,13 +740,14 @@ footer {
 .footer__responsive__nav ul {
   position: relative;
   list-style-type: none;
-  bottom: 150px;
+  bottom: 220px;
 }
 .footer__responsive__nav .menu__item:first-child {
   position: relative;
   text-align: center;
   color: #fff;
-  bottom: -150px;
+  bottom: -220px;
+  border: none;
 }
 .footer__responsive__nav .menu__item:not(:first-child) {
   display: block;
@@ -804,8 +805,6 @@ footer {
   }
   p {
     font-size: 14px;
-    text-align: justify;
-    text-justify: distribute;
   }
   .personal__header__min {
     font-size: 20px;
@@ -838,6 +837,9 @@ footer {
   }
 }
 @media screen and (max-width: 700px) {
+  * {
+    letter-spacing: initial;
+  }
   .top__desc,
   .why,
   .our__works,
@@ -857,7 +859,6 @@ footer {
   .why__grid_container {
     grid-template-rows: 3fr 3fr 3fr 3fr;
     grid-template-columns: 1fr;
-    text-align: justify;
   }
   .item__work img {
     width: 250px;
@@ -910,10 +911,15 @@ footer {
   .why__item {
     text-align: center;
   }
+  .why__item img {
+    left: 30%;
+  }
   .top__desc__paragraph {
     margin-bottom: 10px;
     line-height: 15px;
     letter-spacing: initial;
+    width: 50%;
+    font-size: 12px;
   }
   .top__desc__header {
     text-align: center;
