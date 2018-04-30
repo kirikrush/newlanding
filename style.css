@@ -716,7 +716,7 @@ footer {
   align-items: center;
   flex-direction: row;
   background-image: url("img/footer.png");
-  background-size: cover;
+  background-size: 100% 100%;
 }
 .footer__logo {
   font-family: 'Noto Sans';
