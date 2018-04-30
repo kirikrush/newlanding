@@ -234,9 +234,10 @@ section:not(:first-child):nth-child(2n+1) {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.why__icon__container{
+.why__icon__container {
     position: relative;
 }
+
 .why__item {
     position: relative;
     img {
@@ -245,7 +246,6 @@ section:not(:first-child):nth-child(2n+1) {
         left: 30%;
     }
 }
-
 
 .why__header {
     color: #202020;
@@ -505,7 +505,8 @@ section:not(:first-child):nth-child(2n+1) {
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
-    min-height: 400px;;
+    min-height: 400px;
+    ;
 }
 
 .personal__form {
@@ -535,7 +536,6 @@ section:not(:first-child):nth-child(2n+1) {
         letter-spacing: 0.56px;
         margin-bottom: 10px;
     }
-
 }
 
 // Personal alcoves
@@ -947,8 +947,7 @@ footer {
 }
 
 @media screen and(max-width:700px) {
-
-    *{
+    * {
         letter-spacing: initial;
     }
     .top__desc,
@@ -959,7 +958,7 @@ footer {
     .contacts,
     .personal,
     .feedbacks {
-        padding: 100px 5% 100px 5%;
+        padding: 50px 5% 50px 5%;
     }
     header {
         flex-flow: column;
@@ -1021,9 +1020,12 @@ footer {
         height: 40px;
         font-size: 14px;
     }
+    .attention .get__talk {
+        margin-bottom: 0;
+    }
     .why__item {
         text-align: center;
-        img{
+        img {
             left: 30%;
         }
     }

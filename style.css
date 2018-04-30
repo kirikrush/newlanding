@@ -848,7 +848,7 @@ footer {
   .contacts,
   .personal,
   .feedbacks {
-    padding: 100px 5% 100px 5%;
+    padding: 50px 5% 50px 5%;
   }
   header {
     flex-flow: column;
@@ -907,6 +907,9 @@ footer {
     width: 250px;
     height: 40px;
     font-size: 14px;
+  }
+  .attention .get__talk {
+    margin-bottom: 0;
   }
   .why__item {
     text-align: center;
