@@ -417,7 +417,7 @@ section:not(:first-child):nth-child(2n+1) {
   display: flex;
   justify-content: space-around;
   justify-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-bottom: 130px;
 }
 .personal__paragraph {
@@ -808,6 +808,9 @@ footer {
   }
   .personal__header__min {
     font-size: 20px;
+  }
+  .personal__flex__container {
+    flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 1024px) {
