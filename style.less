@@ -177,47 +177,49 @@ section:not(:first-child):nth-child(2n+1) {
     font-weight: 700;
     letter-spacing: 0.64px;
 }
-.container_test{
-    position:fixed;
-    top:0;
-    left:0;
+
+.container_test {
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: rgba(69, 71, 70, 0.7);
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     z-index: 1;
     transform: scale(0)
 }
-.test_div{
+
+.test_div {
     transition: all 0.5s ease;
-    width:75%;
-    height:100%;
+    width: 75%;
+    height: 100%;
     position: fixed;
-    top:0;
-    right:12.5%;
-    z-index:2;
+    top: 0;
+    right: 12.5%;
+    z-index: 2;
     transform: scale(0);
     background-color: rgba(255, 255, 255, 0.5);
     overflow-x: scroll;
-
 }
 
-.test__close{
+.test__close {
     display: block;
     font-size: 42px;
-    line-height:0;
-    width:200px;
-    height:50px;
-    margin:0 auto;
-    border:2px solid green;
+    line-height: 0;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    border: 2px solid green;
     background-color: green;
     border-radius: 30px;
     text-align: center;
 }
 
-.test__close:hover{
-    border:red 2px solid;
-    color:red;
+.test__close:hover {
+    border: red 2px solid;
+    color: red;
 }
+
 // top desc
 .why {
     padding: 158px @standartPad 140px @standartPad;
@@ -232,14 +234,16 @@ section:not(:first-child):nth-child(2n+1) {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.why__icon__container {
+.why__item {
     position: relative;
     img {
         position: absolute;
         bottom: 0;
-        left: 30%;
+        left: 50%;
+        right: 50%;
     }
 }
+
 
 .why__header {
     color: #202020;
@@ -495,7 +499,11 @@ section:not(:first-child):nth-child(2n+1) {
 }
 
 .personal__frame {
-    display: block;
+    background-image: url(img/alcove.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    min-height: 400px;;
 }
 
 .personal__form {
@@ -525,8 +533,10 @@ section:not(:first-child):nth-child(2n+1) {
         letter-spacing: 0.56px;
         margin-bottom: 10px;
     }
+
 }
 
+// Personal alcoves
 .feedbacks {
     padding: 158px @standartPad 130px @standartPad;
 }
@@ -568,6 +578,8 @@ section:not(:first-child):nth-child(2n+1) {
     width: 370px;
     height: 198px;
     background-image: url("img/preview.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
     transition: all 0.5s ease;
 }
@@ -706,6 +718,7 @@ section:not(:first-child):nth-child(2n+1) {
         font-size: 22px;
         font-weight: 700;
         line-height: 51.79px;
+        margin-bottom: 20px;
         .specialist__shadow {
             position: absolute;
             display: block;
@@ -833,7 +846,7 @@ footer {
         position: relative;
         text-align: center;
         color: #fff;
-        bottom:-150px;
+        bottom: -150px;
     }
     .menu__item:not(:first-child) {
         display: block;
@@ -892,6 +905,8 @@ footer {
     }
     .header__shadow {
         font-size: 26px;
+        line-height: initial;
+        top: -20px;
     }
     p {
         font-size: 14px;
@@ -930,8 +945,17 @@ footer {
     }
 }
 
-
 @media screen and(max-width:700px) {
+    .top__desc,
+    .why,
+    .our__works,
+    .working__process,
+    .our_team,
+    .contacts,
+    .personal,
+    .feedbacks {
+        padding: 100px 5% 100px 5%;
+    }
     header {
         flex-flow: column;
     }
@@ -948,12 +972,61 @@ footer {
             width: 250px;
             height: auto;
         }
+        h5 {
+            font-size: 20px;
+        }
+        p {
+            text-align: center;
+        }
     }
     .office__frame {
-        width: 250px;
+        width: 200px;
         height: auto;
+        margin-bottom: 10px;
     }
-    .personal__frame {
-        width: 75%;
+    .preview__container {
+        width: 280px;
+        height: 150px;
+    }
+    p.attention__paragraph {
+        width: 100%;
+    }
+    .our_team__flex_container .man__name {
+        font-size: 22px;
+    }
+    .our_team__flex_container .man__name .specialist__shadow {
+        font-size: 48px;
+    }
+    .personal__header__min {
+        font-size: 18px;
+        text-align: center;
+        line-height: 20px;
+    }
+    .paragraph {
+        font-size: 14px;
+        width: 100%;
+    }
+    .get__talk {
+        width: 250px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .attention .get__talk,
+    .top__desc__test {
+        width: 250px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .why__item {
+        text-align: center;
+    }
+    .top__desc__paragraph {
+        margin-bottom: 10px;
+        line-height: 15px;
+        letter-spacing: initial;
+    }
+    .top__desc__header {
+        text-align: center;
+        margin-bottom: 10px;
     }
 }
