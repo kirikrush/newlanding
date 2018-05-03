@@ -11,6 +11,20 @@
   text-decoration: none;
   color: #000000;
 }
+button {
+  color: #fffdfe;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 44.97px;
+  letter-spacing: 0.56px;
+}
+.get__talk {
+  margin-bottom: 0;
+}
+*:focus {
+  outline: none;
+}
 a {
   position: relative;
   line-height: 1;
@@ -146,7 +160,7 @@ section:not(:first-child):nth-child(2n+1) {
   height: 63px;
   border-radius: 30px;
   background-color: #a0603c;
-  box-shadow: inset #56280f 0px -20px 0 -15px;
+  box-shadow: inset #56280f 0px -4px 0 0;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
@@ -276,6 +290,13 @@ section:not(:first-child):nth-child(2n+1) {
   background-color: #ffffff;
   text-align: center;
 }
+.item__work button {
+  color: #fffdfe;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 53px;
+  letter-spacing: 0.56px;
+}
 .works__grid__container {
   margin: 100px auto 0 auto;
   display: grid;
@@ -307,7 +328,7 @@ section:not(:first-child):nth-child(2n+1) {
   height: 54px;
   border-radius: 30px;
   background-color: #a0603c;
-  box-shadow: inset #56280f 0px -20px 0 -15px;
+  box-shadow: inset #56280f 0px -4px 0 0;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
@@ -315,12 +336,12 @@ section:not(:first-child):nth-child(2n+1) {
 }
 .get__talk {
   display: block;
-  margin: 75px auto 150px auto;
+  margin: 75px auto 0 auto;
   width: 300px;
   height: 54px;
   border-radius: 30px;
   background-color: #a0603c;
-  box-shadow: inset #56280f 0px -20px 0 -15px;
+  box-shadow: inset #56280f 0px -4px 0 0;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
@@ -418,7 +439,9 @@ section:not(:first-child):nth-child(2n+1) {
   justify-content: space-around;
   justify-items: center;
   flex-wrap: nowrap;
-  margin-bottom: 130px;
+}
+.consultation {
+  max-width: 550px;
 }
 .personal__paragraph {
   color: #202020;
@@ -426,6 +449,7 @@ section:not(:first-child):nth-child(2n+1) {
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
+  max-width: 550px;
 }
 .personal__header__min {
   text-justify: distribute-all-lines;
@@ -441,8 +465,9 @@ section:not(:first-child):nth-child(2n+1) {
   background-image: url(img/alcove.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 100%;
-  min-height: 400px;
+  width: 50%;
+  max-width: 517px;
+  min-height: 410px;
 }
 .personal__form input {
   width: 200px;
@@ -459,7 +484,7 @@ section:not(:first-child):nth-child(2n+1) {
 .personal__form button {
   margin-top: 35px;
   display: block;
-  width: 227px;
+  width: 254px;
   height: 54px;
   border-radius: 30px;
   background-color: #a0603c;
@@ -522,8 +547,15 @@ section:not(:first-child):nth-child(2n+1) {
   bottom: 50%;
   transition: all ease 0.5s;
 }
-.preview__container:hover {
-  opacity: 0.5;
+.bloor {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(155, 155, 155, 0);
+  transition: all 0.5s ease;
+  border-radius: 15px;
+}
+.preview__container:hover .bloor {
+  background-color: rgba(155, 155, 155, 0.3);
 }
 .preview__container:hover .play__logo {
   opacity: 1;
@@ -930,5 +962,8 @@ footer {
   .top__desc__header {
     text-align: center;
     margin-bottom: 10px;
+  }
+  .personal__frame {
+    width: 100%;
   }
 }
