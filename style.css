@@ -25,6 +25,11 @@ button {
 }
 *:focus {
   outline: none;
+  border: none;
+}
+*:active {
+  outline: none;
+  border: none;
 }
 a {
   position: relative;
@@ -961,7 +966,7 @@ footer {
     display: block;
     margin: 10px auto;
     width: 100%;
-    max-width:100%;
+    max-width: 100%;
     float: none;
   }
   header {
