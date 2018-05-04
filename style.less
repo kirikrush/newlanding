@@ -15,11 +15,12 @@
 
 button {
     color: #fffdfe;
-    font-family: "Open Sans";
+    font-family: "Open Sans"; 
     font-size: 12px;
     font-weight: 700;
     line-height: 44.97px;
     letter-spacing: 0.56px;
+    border: none;
 }
 
 .get__talk {
@@ -203,40 +204,101 @@ section:not(:first-child):nth-child(2n+1) {
     width: 100%;
     height: 100%;
     z-index: 1;
-    transform: scale(0)
+    transform: scale(0);
+
 }
 
 .test_div {
     transition: all 0.5s ease;
     width: 85%;
-    height: 100%;
+    height: 85%;
     position: fixed;
-    top: 0;
+    top: 7.5%;
     right: 7.5%;
     z-index: 2;
     transform: scale(0);
-    background-color: rgba(255, 255, 255, 0.5);
-    overflow-x: scroll;
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow-x: visible;
+    padding: 0 @standartPad 0 @standartPad;
+    box-sizing: border-box;
 }
 
 .test__close {
     display: block;
-    font-size: 42px;
-    line-height: 0;
-    width: 200px;
-    height: 50px;
-    margin: 0 auto;
-    border: 2px solid green;
-    background-color: green;
-    border-radius: 30px;
-    text-align: center;
+    position: absolute;
+    top:-15px;
+    right:-40px;
+    overflow: visible;
 }
 
-.test__close:hover {
-    border: red 2px solid;
-    color: red;
+.line{
+    width:30px;
+    height:5px;
+    border-radius:15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.5s linear;
+}
+.line:first-child{
+    transform: rotate(45deg);
+}
+.line:last-child{
+    transform: rotate(-45deg) translate(3px, -3px);
+  
 }
 
+.test__close:hover .line{
+    background-color: #fff
+}
+
+.header__test{
+    display: block;
+}
+.progress{
+    margin-top:30px;
+    width:75%;
+    height:20px;
+    border-radius:30px;
+    display: block; 
+    background-color: rgb(155, 155, 155);
+    position: relative;
+    span{
+        border-radius: 30px;
+        display: block;
+        width:13%;
+        height:100%;
+        background-color: red;
+        transition:all 1s linear;
+    }
+
+    span:hover{
+        width:26%;
+    }
+}
+
+.progress::before{
+    content:"Готово 0%";
+    display: block;
+    position: absolute;
+    top:-20px;
+}
+
+.test__form{
+    .input__container{
+        box-sizing: border-box;
+        width:40%;
+        height:50px;
+        border:1px solid black;
+        border-radius: 30px;
+        float:left;
+        margin-right:15px;
+        padding:15px
+
+    }
+}
+
+.question:not(:first-child){
+    display: none;
+} 
 // top desc
 .why {
     padding: 158px @standartPad 140px @standartPad;
@@ -818,7 +880,10 @@ section:not(:first-child):nth-child(2n+1) {
 }
 
 .office__frame {
-    margin-right: 100px;
+    margin-right: 70px;
+    margin-bottom: 10px;
+    display: block;
+    float: left;
 }
 
 .contacts__flex_container {
@@ -914,6 +979,23 @@ footer {
     }
 }
 
+.social img {
+    margin: 0 5px;
+    width: 47px;
+    height: 47px;
+    border-radius: 100%;
+    background-color: #8e8e8e;
+    transition: background-color 0.2s linear;
+}
+
+.social a:hover img {
+    background-color: #626262;
+}
+
+.social a:after{
+    content: none;
+}
+
 @media screen and(max-width:1500px) {
     .work_time {
         text-align: center;
@@ -924,7 +1006,10 @@ footer {
     }
     .office__frame {
         display: block;
-        margin: 0 auto;
+        float: left;
+        margin: 10px auto;
+        max-width: 40%;
+        margin-right: 10%;
     }
 }
 
@@ -1000,6 +1085,12 @@ footer {
     .feedbacks {
         padding: 50px 5% 50px 5%;
     }
+    .office__frame {
+        display: block;
+        margin: 10px auto;
+        width: 100%;
+        float: none;
+    }
     header {
         flex-flow: column;
     }
@@ -1021,11 +1112,6 @@ footer {
         p {
             text-align: center;
         }
-    }
-    .office__frame {
-        width: 200px;
-        height: auto;
-        margin-bottom: 10px;
     }
     .preview__container {
         width: 280px;
