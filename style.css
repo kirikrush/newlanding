@@ -73,14 +73,11 @@ input[type=radio] {
 .radio__checked {
   width: 12px;
   height: 12px;
-  background-color: orange;
+  background-color: #a0603c;
   border-radius: 100%;
   margin: 4px 4px;
   transform: scale(0);
   transition: all 0.2s linear;
-}
-.radio:hover .radio__checked {
-  transform: scale(1);
 }
 header {
   display: flex;
@@ -198,24 +195,24 @@ section:not(:first-child):nth-child(2n+1) {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(69, 71, 70, 0.7);
+  background-color: rgba(69, 71, 70, 0.5);
   width: 100%;
   height: 100%;
   z-index: 1;
   transform: scale(0);
 }
 .test_div {
+  border-radius: 30px;
   transition: all 0.5s ease;
+  min-height: 600px;
   width: 85%;
-  height: 85%;
   position: fixed;
   top: 7.5%;
   right: 7.5%;
   z-index: 2;
   transform: scale(0);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #ffffff;
   overflow-x: visible;
-  padding: 0 10% 0 10%;
   box-sizing: border-box;
 }
 .test__close {
@@ -244,76 +241,94 @@ section:not(:first-child):nth-child(2n+1) {
 .header__test {
   display: block;
 }
+.test__header {
+  color: #cfb2a3;
+  font-family: "Roboto Slab";
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 52.98px;
+  letter-spacing: 0.68px;
+  margin-bottom: 60px;
+}
+.test__header::before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 28px;
+  background-image: url(img/test_logo.png);
+  margin-right: 10px;
+}
 .progress {
-  margin-top: 30px;
-  width: 75%;
-  height: 20px;
+  margin-top: 90px;
+  width: 100%;
+  height: 15px;
   border-radius: 30px;
   display: block;
-  background-color: #9b9b9b;
   position: relative;
+  border: 2px solid #e1e1e1;
 }
 .progress span {
   border-radius: 30px;
   display: block;
   width: 0%;
   height: 100%;
-  background-color: red;
-  transition: all 1s linear;
+  background-color: #a0603c;
+  transition: all 0.4s linear;
 }
 .progress1::before {
-  content: "Готово 0%";
+  content: "Готово <span>0%</span";
   display: block;
   position: absolute;
-  top: -20px;
+  top: -27px;
 }
 .progress2::before {
   content: "Готово 20%";
   display: block;
   position: absolute;
-  top: -20px;
+  top: -27px;
 }
 .progress3::before {
   content: "Готово 40%";
   display: block;
   position: absolute;
-  top: -20px;
+  top: -27px;
 }
 .progress4::before {
   content: "Готово 60%";
   display: block;
   position: absolute;
-  top: -20px;
+  top: -27px;
 }
 .progress5::before {
   content: "Готово 80%";
   display: block;
   position: absolute;
-  top: -20px;
+  top: -27px;
 }
 .progress6::before {
   content: "Готово 100%";
   display: block;
   position: absolute;
-  top: -20px;
+  top: -27px;
 }
 .test__form .input__container {
-  width: 40%;
+  width: 48%;
   height: 50px;
-  border: 1px solid black;
-  border-radius: 30px;
   float: left;
-  margin-right: 15px;
   margin-top: 10px;
+  margin-bottom: 30px;
   padding-top: 20px;
   padding-left: 5px;
+  border-radius: 13px;
+  border: 2px solid #e1e1e1;
+  background-color: #f4f4f4;
 }
 .test__form .input__container .radio {
   margin-right: 3px;
+  border: 2px solid #a0603c;
+  background-color: #ffffff;
 }
 .test_div footer {
-  padding: 0;
-  width: 100%;
   background-image: none;
 }
 .test_div footer button:first-child {
@@ -325,22 +340,27 @@ section:not(:first-child):nth-child(2n+1) {
   background-color: rgba(235, 146, 30, 0.37);
 }
 .test_div footer button:last-child {
-  color: black;
+  color: white;
   float: right;
-  width: 150px;
-  height: 70px;
-  border-radius: 30px;
-  background-color: rgba(235, 146, 30, 0.37);
+  width: 220px;
+  height: 54px;
+  box-shadow: 0 4px 0 #633c26;
+  border-radius: 26px;
+  background-color: #a0603c;
 }
 .question {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
   position: relative;
   transition: right 0.4s linear;
   right: 0;
   height: initial;
   width: initial;
+  padding: 0 10%;
 }
 .question:not(:first-child) {
-  display: block;
   opacity: 0;
   overflow: hidden;
   width: 0;
@@ -351,6 +371,22 @@ section:not(:first-child):nth-child(2n+1) {
   content: "";
   display: block;
   clear: both;
+}
+.question__header {
+  color: #2f2f2f;
+  font-family: "Roboto Slab";
+  font-size: 53px;
+  font-weight: 700;
+  line-height: 52.98px;
+  letter-spacing: 1.32px;
+}
+.form::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.test__footer {
+  padding: 0 10%;
 }
 .why {
   padding: 158px 10% 140px 10%;
@@ -1001,7 +1037,7 @@ footer {
   .header__shadow {
     font-size: 26px;
     line-height: initial;
-    top: -20px;
+    top: -27px;
   }
   p {
     font-size: 14px;
