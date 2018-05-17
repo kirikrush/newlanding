@@ -240,7 +240,7 @@ section:not(:first-child):nth-child(2n+1) {
     transition: all 0.5s ease;
     min-height: 600px;
     width: 85%;
-    position: fixed;
+    position: absolute;
     top: 7.5%;
     right: 7.5%;
     z-index: 2;
@@ -302,7 +302,6 @@ section:not(:first-child):nth-child(2n+1) {
 }
 
 .progress {
-    margin-top: 90px;
     width: 100%;
     height: 15px;
     border-radius: 30px;
@@ -314,64 +313,63 @@ section:not(:first-child):nth-child(2n+1) {
         display: block;
         width: 0%;
         height: 100%;
-        background-color:#a0603c;
+        background-color: #a0603c;
         transition: all 0.4s linear;
     }
 }
-
-.progress1::before {
-    content: "Готово <span>0%</span";
+#progspan{
     display: block;
-    position: absolute;
-    top: -27px;
+    margin-top: 90px;
 }
 
-.progress2::before {
-    content: "Готово 20%";
-    display: block;
-    position: absolute;
-    top: -27px;
+.progress1::after {
+    content: "0%";
+    color: #a0603c;
+    margin-left: 5px;
 }
 
-.progress3::before {
-    content: "Готово 40%";
-    display: block;
-    position: absolute;
-    top: -27px;
+.progress2::after{
+    content: "20%";
+    color: #a0603c;
+    margin-left: 5px;
 }
 
-.progress4::before {
-    content: "Готово 60%";
-    display: block;
-    position: absolute;
-    top: -27px;
+.progress3::after {
+    content: "40%";
+    color: #a0603c;
+    margin-left: 5px;
 }
 
-.progress5::before {
-    content: "Готово 80%";
-    display: block;
-    position: absolute;
-    top: -27px;
+.progress4::after {
+    content: "60%";
+    color: #a0603c;
+    margin-left: 5px;
 }
 
-.progress6::before {
-    content: "Готово 100%";
-    display: block;
-    position: absolute;
-    top: -27px;
+.progress5::after {
+    content: "80%";
+    color: #a0603c;
+    margin-left: 5px;
+}
+
+.progress6::after {
+    content: "100%";
+    color: #a0603c;
+    margin-left: 5px;
 }
 
 .test__form .input__container {
-    width: 48%;
-    height: 50px;
-    float: left;
+    display: flex;
+    align-items: center;
+    width: 45%;
+    height: 70px;
     margin-top: 10px;
     margin-bottom: 30px;
-    padding-top: 20px;
-    padding-left: 5px;
+    padding-left: 25px;
     border-radius: 13px;
     border: 2px solid #e1e1e1;
     background-color: #f4f4f4;
+    overflow-x: hidden;
     .radio {
         margin-right: 3px;
         border: 2px solid #a0603c;
@@ -402,6 +400,16 @@ section:not(:first-child):nth-child(2n+1) {
     }
 }
 
+.q {
+    margin-left: 25px;
+    color: #2f2f2f;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 52.98px;
+    letter-spacing: 0.45px;
+}
+
 .question {
     display: flex;
     flex-wrap: wrap;
@@ -410,14 +418,18 @@ section:not(:first-child):nth-child(2n+1) {
     position: relative;
     transition: right 0.4s linear;
     right: 0;
-    height: initial;
-    width: initial;
     padding: 0 @standartPad;
+}
+
+.question:last-child::after {
+    content: "";
+    display: block;
+    flex: auto;
+    width: 100%;
 }
 
 .question:not(:first-child) {
     opacity: 0;
-    overflow: hidden;
     width: 0;
     height: 0;
     right: -300px;
@@ -427,6 +439,7 @@ section:not(:first-child):nth-child(2n+1) {
     content: "";
     display: block;
     clear: both;
+    width: 100%;
 }
 
 .question__header {
@@ -450,6 +463,26 @@ section:not(:first-child):nth-child(2n+1) {
     clear: both;
 }
 
+
+#prev {
+    background-color: initial;
+    color:#b7a094;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 52.98px;
+    letter-spacing: 0.45px;
+}
+
+#next{
+
+color: #fbfbfb;
+font-family: "Noto Serif";
+font-size: 18px;
+font-weight: 700;
+line-height: 52.98px;
+letter-spacing: 0.72px;
+}
 .test__footer {
     padding: 0 @standartPad;
 }

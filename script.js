@@ -45,7 +45,7 @@ $(document).ready(() => {
       transform: "scale(1)"
     })
     $("body").css({
-      overflow: "hidden"
+      "overflow-x": "hidden"
     })
 
 
@@ -59,7 +59,7 @@ $(document).ready(() => {
       transform: "scale(0)"
     })
 
-    $("body").css({
+    $("main").css({
       overflow: "scroll"
     })
 
@@ -82,7 +82,7 @@ $(document).ready(() => {
           "opacity": "1"
         });
         $('#test__progress').css("width", "20%");
-        $('#test__progress').removeClass().addClass("progress2");
+        $('#progspan').removeClass().addClass("progress2");
         break;
       case '#question__two':
         $(current_ask.id).css({
@@ -99,7 +99,7 @@ $(document).ready(() => {
           "opacity": "1"
         });
         $('#test__progress').css("width", "40%");
-        $('#test__progress').removeClass("progress2").addClass("progress3")
+        $('#progspan').removeClass("progress2").addClass("progress3")
         break;
       case '#question__three':
         $(current_ask.id).css({
@@ -116,7 +116,7 @@ $(document).ready(() => {
           "opacity": "1"
         });
         $('#test__progress').css("width", "60%");
-        $('#test__progress').removeClass("progress3").addClass("progress4")
+        $('#progspan').removeClass("progress3").addClass("progress4")
         break;
       case '#question__four':
         $(current_ask.id).css({
@@ -133,7 +133,7 @@ $(document).ready(() => {
           "opacity": "1"
         });
         $('#test__progress').css("width", "80%");
-        $('#test__progress').removeClass("progress4").addClass("progress5")
+        $('#progspan').removeClass("progress4").addClass("progress5")
         break;
       case '#question__five':
         $(current_ask.id).css({
@@ -150,7 +150,7 @@ $(document).ready(() => {
           "height": "initial",
         });
         $('#test__progress').css("width", "100%");
-        $('#test__progress').removeClass("progress5").addClass("progress6");
+        $('#progspan').removeClass("progress5").addClass("progress6");
         break;
 
     }
@@ -174,7 +174,7 @@ $(document).ready(() => {
           "height": "initial",
         })
         $('#test__progress').css("width", "0%");
-        $('#test__progress').removeClass().addClass("progress1")
+        $('#progspan').removeClass().addClass("progress1")
         break;
       case "#question__three":
         $(current_ask.id).css({
@@ -191,7 +191,7 @@ $(document).ready(() => {
           "height": "initial",
         })
         $('#test__progress').css("width", "20%");
-        $('#test__progress').removeClass().addClass("progress2");
+        $('#progspan').removeClass().addClass("progress2");
         break;
 
       case "#question__four":
@@ -209,7 +209,7 @@ $(document).ready(() => {
           "height": "initial",
         })
         $('#test__progress').css("width", "40%");
-        $('#test__progress').removeClass().addClass("progress3");
+        $('#progspan').removeClass().addClass("progress3");
         break;
 
       case "#question__five":
@@ -227,7 +227,7 @@ $(document).ready(() => {
           "height": "initial",
         })
         $('#test__progress').css("width", "60%");
-        $('#test__progress').removeClass().addClass("progress4");
+        $('#progspan').removeClass().addClass("progress4");
         break;
       case "#test__over":
         $(current_ask.id).css({
@@ -244,7 +244,7 @@ $(document).ready(() => {
           "height": "initial",
         })
         $('#test__progress').css("width", "80%");
-        $('#test__progress').removeClass().addClass("progress5");
+        $('#progspan').removeClass().addClass("progress5");
         break;
 
 
@@ -258,7 +258,7 @@ $(document).ready(() => {
     $(current_label).css({
       "border":"2px solid #e1e1e1"
     })
-    current_label = event.target;
+    current_label = event.currentTarget;
      $(current_label).find(".radio__checked").css({
       "transform": "scale(1)"
     })
