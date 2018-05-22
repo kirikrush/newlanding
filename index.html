@@ -21,23 +21,29 @@
     </div>
     <nav class="header__nav" id="nav">
       <ul>
-        <li class="menu__item">
+        <li class="menu__item relat">
           <a href="javascript:void(0);" class="response__menu__icon" onclick="showMenu()">
             <div class="menu__line"></div>
             <div class="menu__line"></div>
             <div class="menu__line"></div>
+            <ul class="hidden__menu visible">
+              <li class="hidden__li"><a href="#ourWorks" onclick="hideMenu()">Наши работы</a></li>
+              <li class="hidden__li"><a href="#ourWorks" onclick="hideMenu()">Наши работы</a></li>
+              <li class="hidden__li"><a href="#feedbacks" onclick="hideMenu()">Отзывы</a></li>
+              <li class="hidden__li"><a href="#contacts" onclick="hideMenu()">Контакты</a></li>
+            </ul>
           </a>
         </li>
-        <li class="menu__item">
+        <li class="menu__item visible">
           <a href="#ourWorks" onclick="hideMenu()">Наши работы</a>
         </li>
-        <li class="menu__item">
-          <a href="#workingProcess" onclick="hideMenu()">Процесс работы</a>
+        <li class="menu__item visible">
+          <a href="#ourWorks" onclick="hideMenu()">Наши работы</a>>
         </li>
-        <li class="menu__item">
+        <li class="menu__item visible">
           <a href="#feedbacks" onclick="hideMenu()">Отзывы</a>
         </li>
-        <li class="menu__item">
+        <li class="menu__item visible">
           <a href="#contacts" onclick="hideMenu()">Контакты</a>
         </li>
       </ul>
@@ -279,7 +285,7 @@
         <div class="step">
           <img src="img/step_3.png" alt="3" class="step__frame">
           <span class="number">03</span>
-          <span class="leftd">Изготовление изделий </span>
+          <span class="step__desc leftd">Изготовление изделий </span>
         </div> 
         <div class="step">
           <img src="img/step_4.png" alt="4" class="step__frame">
