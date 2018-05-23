@@ -1011,9 +1011,12 @@ section:not(:first-child):nth-child(2n+1) {
     justify-content: space-around;
     justify-items: center;
     img {
-        display: block;
+        width:100%;
         margin-bottom: 10px;
-        object-fit: contain;
+    }
+
+    div{
+        width:20%;
     }
 }
 
@@ -1613,7 +1616,7 @@ footer {
     .attention {
         padding: 30px 10px 10px 10px;
         .attention__flex_container img {
-            width: 45%;
+            width: 100%;
             height: auto;
         }
         .get__talk {
@@ -1743,5 +1746,9 @@ footer {
     }
     .test__close {
         right: -10px;
+    }
+
+    .attention__flex_container div{
+        width:45%;
     }
 }
