@@ -18,7 +18,9 @@
 .continue {
     display: none;
 }
-
+.our__works,.why, .working__process {
+    overflow-x: hidden;
+}
 button {
     color: #fffdfe;
     font-family: "Open Sans";
@@ -543,6 +545,10 @@ section:not(:first-child):nth-child(2n+1) {
         position: absolute;
         bottom: 0;
         left: 30%;
+        transition: transform linear 0.3s;
+    }
+    img:hover{
+        transform: rotate3d(1,0,0,360deg)
     }
 }
 
