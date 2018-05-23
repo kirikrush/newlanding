@@ -159,6 +159,7 @@ header {
     border-radius: 15px;
     float: right;
     clear: both;
+    transition: linear 0.2s all;
 }
 
 .menu__line:nth-child(2) {
@@ -267,7 +268,7 @@ section:not(:first-child):nth-child(2n+1) {
 .test_div {
     border-radius: 30px;
     transition: all 0.5s ease;
-    min-height: 600px;
+    min-height: 85%;
     width: 85%;
     position: absolute;
     top: 7.5%;
@@ -658,7 +659,7 @@ section:not(:first-child):nth-child(2n+1) {
     display: grid;
     grid-template-rows: 3fr 3fr;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 100px;
+    grid-column-gap: 4%;
     grid-row-gap: 50px;
     justify-items: center;
     justify-content: space-between;
@@ -1185,6 +1186,12 @@ footer {
     color: #fff;
 }
 
+.relat:hover .menu__line:nth-child(2){
+    transition: all linear 0.5s;
+    width:20px;
+    transform: rotate(180deg)
+}
+
 .footer__responsive__nav {
     height: 23px;
     ul {
@@ -1347,6 +1354,11 @@ footer {
     #prev,
     #next {
         width: 100px;
+        font-size:12px;
+        line-height: 14px;
+        height:20px;
+        margin-top:20px;
+        margin-bottom:30px;
     }
     .why__grid_container {
         grid-template-rows: 3fr 3fr 3fr 3fr;
@@ -1426,9 +1438,12 @@ footer {
     .header {
         margin-bottom: 30px;
     }
-    .visible {
+    .visible:not(ul){
+        position: relative;
         display: none;
+        transition: all linear 0.2s;
     }
+
     .hidden,
     .show_hidden,
     .continue {
@@ -1506,6 +1521,7 @@ footer {
     }
     .why__grid_container {
         grid-template-rows: auto;
+        grid-row-gap: 100px;
         margin-top: 125px;
         .why__item {
             text-align: center;
@@ -1518,22 +1534,15 @@ footer {
                 letter-spacing: 0.12px;
             }
         }
-        .why__item:nth-child(1) img,
-        .why__item:nth-child(3) img,
-        .why__item:nth-child(4) img,
-        .why__item:nth-child(6) img {
-            width: 115px;
-            left: 50%;
-            margin-left: -40px;
-            bottom: 25px;
+        .why__item img{
+            display: block;
+            margin-left:-30px;
+            width:110px;
+            left:50%;
         }
-        .why__item:nth-child(2) img,
-        .why__item:nth-child(5) img {
-            height: 110px;
-            left: 50%;
-            margin-left: -33px;
-            bottom: 25px;
-        }
+            .why__icon__container{
+                text-align: center;
+            }
     }
     .works__grid__container {
         grid-template-rows: auto;
@@ -1721,10 +1730,13 @@ footer {
         .input__container {
             margin-bottom: 0px;
             height: 50px;
+            padding-left:10px;
+            width:42%;
         }
         .q {
             font-size: 14px;
             line-height: initial;
+            margin-left:5px;
         }
     }
     .test__close {

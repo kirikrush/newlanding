@@ -27,24 +27,32 @@
             <div class="menu__line"></div>
             <div class="menu__line"></div>
             <ul class="hidden__menu visible">
-              <li class="hidden__li"><a href="#ourWorks" onclick="hideMenu()">Наши работы</a></li>
-              <li class="hidden__li"><a href="#ourWorks" onclick="hideMenu()">Наши работы</a></li>
-              <li class="hidden__li"><a href="#feedbacks" onclick="hideMenu()">Отзывы</a></li>
-              <li class="hidden__li"><a href="#contacts" onclick="hideMenu()">Контакты</a></li>
+              <li class="hidden__li">
+                <a href="#ourWorks" onclick="hideMenu()" class="scroll">Наши работы</a>
+              </li>
+              <li class="hidden__li">
+                <a href="#ourWorks" onclick="hideMenu()" class="scroll">Наши работы</a>
+              </li>
+              <li class="hidden__li">
+                <a href="#feedbacks" onclick="hideMenu()" class="scroll">Отзывы</a>
+              </li>
+              <li class="hidden__li">
+                <a href="#contacts" onclick="hideMenu()" class="scroll">Контакты</a>
+              </li>
             </ul>
           </a>
         </li>
         <li class="menu__item visible">
-          <a href="#ourWorks" onclick="hideMenu()">Наши работы</a>
+          <a href="#ourWorks" onclick="hideMenu()" class="scroll">Наши работы</a>
         </li>
         <li class="menu__item visible">
-          <a href="#ourWorks" onclick="hideMenu()">Наши работы</a>>
+          <a href="#ourWorks" onclick="hideMenu()" class="scroll">Наши работы</a>>
         </li>
         <li class="menu__item visible">
-          <a href="#feedbacks" onclick="hideMenu()">Отзывы</a>
+          <a href="#feedbacks" onclick="hideMenu()" class="scroll">Отзывы</a>
         </li>
         <li class="menu__item visible">
-          <a href="#contacts" onclick="hideMenu()">Контакты</a>
+          <a href="#contacts" onclick="hideMenu()" class="scroll">Контакты</a>
         </li>
       </ul>
       <!-- navigation list -->
@@ -191,7 +199,7 @@
           <p>Наши специалисты имеют большой опыт работы по металлу, мы решаем самые сложные художественные и технические задачи.
           </p>
         </div>
-        <div class="why__item visible">
+        <div class="why__item visible dropdown">
           <div class="why__icon__container">
             <img src="img/style.png" alt="style">
           </div>
@@ -199,14 +207,14 @@
           <p>Наши специалисты имеют большой опыт работы по металлу, мы решаем самые сложные художественные и технические задачи.
           </p>
         </div>
-        <div class="why__item visible">
+        <div class="why__item visible dropdown">
           <div class="why__icon__container">
             <img src="img/experience.png" alt="exp">
           </div>
           <h5>Многолетний опыт </h5>
           <p>Создаем кованные беседки на протяжение 25 лет, имем большой каталого готовых работ.</p>
         </div>
-        <div class="why__item visible">
+        <div class="why__item visible dropdown">
           <div class="why__icon__container">
             <img src="img/guaranted.png" alt="">
           </div>
@@ -215,7 +223,7 @@
             художественной ковки. </p>
         </div>
       </div>
-      <button class="show_hidden">
+      <button class="show_hidden" id="show__hidden__why">
         Показать все
       </button>
       <!-- Why we are the best -->
@@ -243,19 +251,19 @@
           <p>с тентовым покрытием в сад</p>
           <button>Подробнее</button>
         </div>
-        <div class="item__work visible">
+        <div class="item__work visible dropdown">
           <img src="img/work_1.png" alt="4">
           <h5>Кованная беседка</h5>
           <p>с тентовым покрытием в сад</p>
           <button>Подробнее</button>
         </div>
-        <div class="item__work visible">
+        <div class="item__work visible dropdown">
           <img src="img/work_2.png" alt="5">
           <h5>Кованная беседка</h5>
           <p>с тентовым покрытием в сад</p>
           <button>Подробнее</button>
         </div>
-        <div class="item__work visible">
+        <div class="item__work visible dropdown">
           <img src="img/work_3.png" alt="6">
           <h5>Кованная беседка</h5>
           <p>с тентовым покрытием в сад</p>
@@ -263,7 +271,7 @@
         </div>
       </div>
       <button class="get__talk visible">Заказать беседу</button>
-      <button class="show_hidden">Показать все</button>
+      <button class="show_hidden" id="show__hidden__our">Показать все</button>
     </section>
     <!-- Our products -->
     <section class="working__process" id="workingProcess">
@@ -286,7 +294,7 @@
           <img src="img/step_3.png" alt="3" class="step__frame">
           <span class="number">03</span>
           <span class="step__desc leftd">Изготовление изделий </span>
-        </div> 
+        </div>
         <div class="step">
           <img src="img/step_4.png" alt="4" class="step__frame">
           <span class="number">04</span>
@@ -312,9 +320,9 @@
         </div>
         <div class="step">
           <img src="img/item_response3.png" alt="3" class="step__frame__hidden">
-            <div class="wrapper">
-                <div class="number">03</div>
-              <span class="step__desc leftd">Изготовление изделий </span>
+          <div class="wrapper">
+            <div class="number">03</div>
+            <span class="step__desc leftd">Изготовление изделий </span>
           </div>
         </div>
         <div class="step">
@@ -335,15 +343,15 @@
         <div class="consultation">
           <p class="personal__paragraph paragraph">В мире бурно развивающейся строительной отрасли особое место занимает такое сооружение, как кованые беседки для
             дачи.
-            <span class="visible">
+            <span class="pers visible">
               Конструкция представляет собой огражденную площадь, созданную специализированно для проведения времени в кругу семьи, друзей
               и близких. Прекрасный внешний вид сооружения можно добавить композицией заборов, решеток и деталей садовых
               украшений, выполненных из того материала.
             </span>
           </p>
-          <button class="show_hidden continue">Подробнее ˅</button>
+          <button class="show_hidden continue" id="show__span">Подробнее ˅</button>
           <h3 class="personal__header__min">Заказать персональную консультацию</h3>
-          <form action="" class="personal__form" metho="POST">
+          <form action="" class="personal__form" method="POST">
             <input type="text" placeholder="Ваше имя" required="required">
             <input type="tel" placeholder="Ваш телефон" pattern="+[1-9]{1}[0-9]{10}" required="required">
             <button>Получить консультацию</button>
@@ -383,7 +391,7 @@
           <span class="specialist">Телеведущая</span>
         </div>
       </div>
-      <button class="show_hidden">Все отзывы</button>
+      <button class="show_hidden" id="show__hidden__fb">Все отзывы</button>
     </section>
     <!-- Feedbacks -->
     <section class="attention">
@@ -397,75 +405,75 @@
         <img src="img/attention-frame.png" alt="frame" class="attenton__frame">
       </div>
       <p class="attention__paragraph paragraph">Мы умеем делать действительно качественные, уникальные, не похожие на другие кованые изделия. При этом
-        <span class="visible">
+        <span class="att visible">
           мы делаем их с инженерной точностью и индивидуальным подходом к дизайну. Изготовленные нами кованые изделия изящны, оригинальны,
           и, вместе с тем — надёжны, практичны и привлекательны по цене.</span>
       </p>
-      <button class="continue">Подробнее ˅</button>
-      <button class="get__talk">Заказать беседку</button>
+      <button class="continue" id="attention__span">Подробнее ˅</button>
+      <button class=" get__talk ">Заказать беседку</button>
     </section>
     <!-- Attention to details -->
-    <section class="our_team">
-      <h1 class="our_team__header header">Наша команда
-        <span class="our_team__header__shadow header__shadow">Наша команда</span>
+    <section class="our_team ">
+      <h1 class="our_team__header header ">Наша команда
+        <span class="our_team__header__shadow header__shadow ">Наша команда</span>
       </h1>
-      <div class="our_team__flex_container">
-        <div class="man">
-          <img src="img/man.png" alt="man" class="man__avatar">
-          <h3 class="man__name">Владимир Левченко
-            <span class="specialist__shadow">Кузнец</span>
+      <div class="our_team__flex_container ">
+        <div class="man ">
+          <img src="img/man.png " alt="man " class="man__avatar ">
+          <h3 class="man__name ">Владимир Левченко
+            <span class="specialist__shadow ">Кузнец</span>
           </h3>
         </div>
-        <div class="man">
-          <img src="img/man.png" alt="man" class="man__avatar">
-          <h3 class="man__name">Владимир Левченко
-            <span class="specialist__shadow">Кузнец</span>
+        <div class="man ">
+          <img src="img/man.png " alt="man " class="man__avatar ">
+          <h3 class="man__name ">Владимир Левченко
+            <span class="specialist__shadow ">Кузнец</span>
           </h3>
         </div>
-        <div class="man">
-          <img src="img/man.png" alt="man" class="man__avatar">
-          <h3 class="man__name">Владимир Левченко
-            <span class="specialist__shadow">Кузнец</span>
+        <div class="man ">
+          <img src="img/man.png " alt="man " class="man__avatar ">
+          <h3 class="man__name ">Владимир Левченко
+            <span class="specialist__shadow ">Кузнец</span>
           </h3>
         </div>
-        <div class="man">
-          <img src="img/man.png" alt="man" class="man__avatar">
-          <h3 class="man__name">Владимир Левченко
-            <span class="specialist__shadow">Кузнец</span>
+        <div class="man ">
+          <img src="img/man.png " alt="man " class="man__avatar ">
+          <h3 class="man__name ">Владимир Левченко
+            <span class="specialist__shadow ">Кузнец</span>
           </h3>
         </div>
       </div>
     </section>
     <!-- our team -->
-    <section class="contacts" id="contacts">
-      <h1 class="contacts__header header">Контакты
-        <span class="contacts__header__shadow header__shadow">Контакты</span>
+    <section class="contacts " id="contacts ">
+      <h1 class="contacts__header header ">Контакты
+        <span class="contacts__header__shadow header__shadow ">Контакты</span>
       </h1>
-      <div class="contacts__flex_container">
-        <div class="office_">
-          <p class="office__paragraph paragraph visible">Офис по адресу ул. Раздольная, 1ж - это наш новый совмещенный проект под брендом "АртПарк: мастерская ковки и ландшафтного
-            дизайна Натальи Афониной". Здесь вы можете заказать не только уникальное кованое изделие по индивидуальному проекту,
+      <div class="contacts__flex_container ">
+        <div class="office_ ">
+          <p class="office__paragraph paragraph visible
+        ">Офис по адресу ул. Раздольная, 1ж - это наш новый совмещенный проект под брендом "АртПарк: мастерская ковки и ландшафтного дизайна Натальи Афониной ". Здесь вы можете заказать не только уникальное кованое изделие по индивидуальному проекту,
             но еще и любой из видов благоустройства придомовой территории и ландшафтного дизайна. Мы ждем вас! У нас просторно,
             много образцов и целых два дизайнера-проектировщика!</p>
-          <img src="img/office.png" alt="office" class="office__frame visible">
-          <img src="img/office.png" alt="office" class="office__frame">
+          <img src="img/office.png " alt="office " class="office__frame visible ">
+          <img src="img/office.png " alt="office " class="office__frame ">
         </div>
-        <div class="work_time">
-          <h3 class="time">Рабочее время:
+        <div class="work_time ">
+          <h3 class="time ">Рабочее время:
           </h3>
-          <div class="days">
+          <div class="days ">
             <span>Понедельник-Пятница: с 9.00 до 18.00</span>
             <span>Суббота с 10.00 до 16.00</span>
             <span>Воскресенье-выходной</span>
           </div>
-          <div class="adress">
+          <div class="adress ">
             <h3>Адрес</h3>
             <span>ул.Раздольная, 1ж</span>
           </div>
-          <h3 class="tel">Телефон:</h3>
+          <h3 class="tel ">Телефон:</h3>
           <span>+7 (4862) 48-98-92</span>
           <span> +7 (910) 308-98-92</span>
-          <h3 class="e-mail">E-mail:</h3>
+          <h3 class="e-mail ">E-mail:</h3>
           <span>info@kovanstil.ru</span>
         </div>
       </div>
@@ -473,41 +481,41 @@
     <!-- Time and place -->
   </main>
   <footer>
-    <div class="footer__logo">
+    <div class="footer__logo ">
       Logotype
     </div>
-    <nav class="footer__nav" id="foot_nav">
+    <nav class="footer__nav " id="foot_nav ">
       <ul>
-        <li class="menu__item">
-          <a href="javascript:void(0);" class="response__menu__icon" id="response__menu__icon" onclick="showBotMenu()">☰ </a>
+        <li class="menu__item ">
+          <a href="javascript:void(0); " class="response__menu__icon " id="response__menu__icon " onclick="showBotMenu() ">☰ </a>
         </li>
-        <li class="menu__item">
-          <a href="#ourWorks" onclick="hideBotMenu()">Наши работы</a>
+        <li class="menu__item ">
+          <a href="#ourWorks " onclick="hideBotMenu() ">Наши работы</a>
         </li>
-        <li class="menu__item">
-          <a href="#workingProcess" onclick="hideBotMenu()">Процесс работы</a>
+        <li class="menu__item ">
+          <a href="#workingProcess " onclick="hideBotMenu() ">Процесс работы</a>
         </li>
-        <li class="menu__item">
-          <a href="#feedbacks" onclick="hideBotMenu()">Отзывы</a>
+        <li class="menu__item ">
+          <a href="#feedbacks " onclick="hideBotMenu() ">Отзывы</a>
         </li>
-        <li class="menu__item">
-          <a href="#contacts" onclick="hideBotMenu()">Контакты</a>
+        <li class="menu__item ">
+          <a href="#contacts " onclick="hideBotMenu() ">Контакты</a>
         </li>
       </ul>
       <!-- navigation list -->
     </nav>
-    <div class="social">
-      <a href="">
-        <img src="img/social.png" alt="social" class="social">
+    <div class="social ">
+      <a href=" ">
+        <img src="img/social.png " alt="social " class="social ">
       </a>
-      <a href="">
-        <img src="img/social_2.png" alt="social" class="social">
+      <a href=" ">
+        <img src="img/social_2.png " alt="social " class="social ">
       </a>
-      <a href="">
-        <img src="img/social_3.png" alt="social" class="social">
+      <a href=" ">
+        <img src="img/social_3.png " alt="social " class="social ">
       </a>
-      <a href="">
-        <img src="img/social_4.png" alt="social" class="social">
+      <a href=" ">
+        <img src="img/social_4.png " alt="social " class="social ">
       </a>
     </div>
   </footer>
