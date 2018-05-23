@@ -564,13 +564,13 @@ section:not(:first-child):nth-child(2n+1) {
 
 @keyframes coinflip {
     0% {
-        transform: rotate3d(0, 0, 0, 360deg)
+        transform: rotateX(0deg)
     }
     50% {
-        transform: rotate3d(1, 0, 0, 180deg)
+        transform: rotateX(90deg);
     }
     100% {
-        transform: rotate3d(1, 0, 0, 360deg)
+        transform: rotateX(360deg)
     }
 }
 
@@ -582,11 +582,10 @@ section:not(:first-child):nth-child(2n+1) {
         left: 30%;
         transition: transform linear 0.3s;
     }
-    img:hover {
-        animation: coinflip 0.5s ease-in-out 1;
-    }
 }
-
+.why__item:hover img{
+        animation: coinflip 0.5s ease-in-out 1;
+}
 .show_hidden {
     display: none;
     width: 160px;
