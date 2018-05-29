@@ -40,7 +40,7 @@ $(document).ready(() => {
     })
 
     $("main").css({
-      overflow: "scroll"
+      overflow: "auto"
     })
 
   })

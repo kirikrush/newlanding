@@ -51,9 +51,7 @@ button {
   line-height: 44.97px;
   letter-spacing: 0.56px;
   border: none;
-}
-button:hover {
-  animation: bouncer 1s infinite ease-in-out;
+  transition: all linear 0.2s;
 }
 button:active,
 button:focus {
@@ -484,14 +482,35 @@ section:not(:first-child):nth-child(2n+1) {
   position: relative;
 }
 @keyframes coinflip {
-  0% {
-    transform: rotateX(0deg);
+  10% {
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    transform: translateX(-3px) rotate(-2deg);
   }
   50% {
-    transform: rotateX(90deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    transform: translateX(1px) rotate(0deg);
   }
   100% {
-    transform: rotateX(360deg);
+    transform: translateX(-1px) rotate(0deg);
   }
 }
 .why__item {
@@ -594,6 +613,9 @@ section:not(:first-child):nth-child(2n+1) {
   border: 5px solid rgba(155, 155, 155, 0.23);
   background-color: #ffffff;
   text-align: center;
+}
+.item__work img {
+  transition: all 0.5s linear;
 }
 .item__work button {
   color: #fffdfe;
@@ -1622,4 +1644,7 @@ footer {
   .attention__flex_container div {
     width: 45%;
   }
+}
+button:hover {
+  background-color: #56280f;
 }
