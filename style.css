@@ -949,7 +949,7 @@ section:not(:first-child):nth-child(2n+1) {
   width: 20%;
 }
 .attention__paragraph {
-  width: 70%;
+  width: 100%;
   text-align: start;
   margin: 65px auto 0 auto;
   font-size: 18px;
@@ -987,6 +987,7 @@ section:not(:first-child):nth-child(2n+1) {
   justify-content: space-around;
   justify-items: center;
   flex-wrap: wrap;
+  margin-top:40px;
 }
 
 .our_team__flex_container .man__name {
