@@ -988,12 +988,7 @@ section:not(:first-child):nth-child(2n+1) {
   justify-items: center;
   flex-wrap: wrap;
 }
-.our_team__flex_container .man {
-  transition: transform 0.1s linear;
-}
-.our_team__flex_container .man:hover {
-  transform: scale(1.3);
-}
+
 .our_team__flex_container .man__name {
   position: relative;
   display: block;
