@@ -51,7 +51,7 @@ button {
   line-height: 44.97px;
   letter-spacing: 0.56px;
   border: none;
-  transition: all linear 0.2s;
+  transition: all ease 0.2s;
 }
 button:active,
 button:focus {
@@ -114,7 +114,7 @@ input[type=radio] {
   border-radius: 100%;
   margin: 4px 4px;
   transform: scale(0);
-  transition: all 0.2s linear;
+  transition: all 0.2s ease;
 }
 header {
   display: flex;
@@ -161,7 +161,7 @@ header {
   border-radius: 15px;
   float: right;
   clear: both;
-  transition: linear 0.2s all;
+  transition: ease 0.2s all;
 }
 .menu__line:nth-child(2) {
   width: 15px;
@@ -276,7 +276,7 @@ section:not(:first-child):nth-child(2n+1) {
   height: 5px;
   border-radius: 15px;
   background-color: #ffffff;
-  transition: all 0.5s linear;
+  transition: all 0.5s ease;
 }
 .line:first-child {
   transform: rotate(45deg);
@@ -321,7 +321,7 @@ section:not(:first-child):nth-child(2n+1) {
   width: 0%;
   height: 100%;
   background-color: #a0603c;
-  transition: all 0.4s linear;
+  transition: all 0.4s ease;
 }
 #progspan {
   display: block;
@@ -411,7 +411,7 @@ section:not(:first-child):nth-child(2n+1) {
   justify-content: space-between;
   overflow: hidden;
   position: relative;
-  transition: right 0.4s linear;
+  transition: right 0.4s ease;
   right: 0;
   padding: 0 10%;
 }
@@ -520,10 +520,10 @@ section:not(:first-child):nth-child(2n+1) {
   position: absolute;
   bottom: 0;
   left: 30%;
-  transition: transform linear 0.3s;
+  transition: transform ease 0.3s;
 }
 .why__item:hover img {
-  animation: coinflip 0.5s ease-in-out 1;
+  animation: coinflip 1s ease-in-out 1;
 }
 .show_hidden {
   display: none;
@@ -615,7 +615,7 @@ section:not(:first-child):nth-child(2n+1) {
   text-align: center;
 }
 .item__work img {
-  transition: all 0.5s linear;
+  transition: all 0.5s ease;
 }
 .item__work button {
   color: #fffdfe;
@@ -949,8 +949,8 @@ section:not(:first-child):nth-child(2n+1) {
   width: 20%;
 }
 .attention__paragraph {
-  width: 50%;
-  text-align: center;
+  width: 70%;
+  text-align: start;
   margin: 65px auto 0 auto;
   font-size: 18px;
   font-weight: 400;
@@ -1102,7 +1102,7 @@ footer {
   color: #fff;
 }
 .relat:hover .menu__line:nth-child(2) {
-  transition: all linear 0.5s;
+  transition: all ease 0.5s;
   width: 20px;
   transform: rotate(180deg);
 }
@@ -1150,7 +1150,7 @@ footer {
   height: 47px;
   border-radius: 100%;
   background-color: #8e8e8e;
-  transition: background-color 0.2s linear;
+  transition: background-color 0.2s ease;
 }
 .social a:hover img {
   background-color: #626262;
@@ -1342,7 +1342,7 @@ footer {
   .visible:not(ul) {
     position: relative;
     display: none;
-    transition: all linear 0.2s;
+    transition: all ease 0.2s;
   }
   .hidden,
   .show_hidden,
